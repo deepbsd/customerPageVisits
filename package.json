@@ -1,0 +1,24 @@
+{
+  "name": "customer_page_visits",
+  "version": "0.0.1",
+  "description": "one-off for parsing a CSV file on filesystem",
+  "main": "custPageVisits.js",
+  "dependencies": {
+    "csv": "^5.1.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepbsd/customerPageVisits.git"
+  },
+  "author": "Dave Jackson and Laurel Butler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepbsd/customerPageVisits/issues"
+  },
+  "homepage": "https://github.com/deepbsd/customerPageVisits#readme"
+}
