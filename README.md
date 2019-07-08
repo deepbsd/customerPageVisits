@@ -29,11 +29,14 @@ package.json file, though.  npm will just tell you it's aready at the latest ver
 # The Data File
 
 The data file should be in the format `1, C1, P2` and each line will be terminated with a "\n" (standard 
-UNIX newline), because each line will be read and split into an array of lines.  There can be 
-lots of lines, but currently the `data.csv` file is just a few lines long.
+UNIX newline), because each line will be read and split into an array of lines.  
 
-Oh, the filename should probably be `data.csv`.  If you want to name it something else, you'll
-have to rename the constant `DATAFILE` in the code.  
+The format for each line should be: `transaction number, Customer number, Page number`, each separated by a coma.
+
+There can be lots of lines, but currently the `data.csv` file is just a few lines long.
+
+Oh, the filename should probably be named `data.csv`.  If you want to name it something else, you'll
+have to rename the constant `DATAFILE` target in the code.  
 
 You'll also want to update the path to the file if it's not in the current directory.
 
@@ -41,7 +44,7 @@ You'll also want to update the path to the file if it's not in the current direc
 
 This program uses the `process.argv` array to collect arguments and iterate through them.  If you only use one 
 argument, then you'll get one list of page visits.  If you pass two arguments, you'll get two lines of output.
-And so on.
+And so on.  These arguments must be equivalent to the customer ID numbers in the `data.csv` file.
 
 # Tests
 
